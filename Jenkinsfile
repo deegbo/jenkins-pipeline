@@ -4,7 +4,7 @@ pipeline {
        DOCKER_PWD = credentials('Ye3ehGehPlu#')
    }
    agent {
-       docker {
+       any {
            image 'deegbo/node-docker'
 	   args '-p 3000:3000'
 	   args '-w /app'
