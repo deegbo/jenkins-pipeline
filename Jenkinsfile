@@ -1,11 +1,11 @@
 pipeline {
    environment {
        registry = "deegbo/jenkins-docker-test"
-       DOCKER_PWD = credentials('')
+       DOCKER_PWD = credentials('none')
    }
    agent {
        any {
-           image 'deegbo/node-docker'
+           image 'gnschenker/node-docker'
 	   args '-p 3000:3000'
 	   args '-w /app'
 	   args '-v /var/run/docker.sock:/var/run/docker.sock'
