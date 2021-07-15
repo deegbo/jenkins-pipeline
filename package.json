@@ -4,7 +4,7 @@
 "main": "server.js",
 "scripts": {
 "start": "node server.js",
-"test": "jasmine"
+"test": "jasmine spec/hobbies-spec.js"
 },
 "dependencies": {
 "express": "^4.17.1"
