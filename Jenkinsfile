@@ -4,7 +4,7 @@ pipeline {
        DOCKER_PWD = credentials('0d96dc76-64cc-45b8-ac1c-7553619c2b86')
    }
    agent {
-       any {
+       docker {
            image 'gnschenker/node-docker'
 	   args '-p 3000:3000'
 	   args '-w /app'
