@@ -1,6 +1,6 @@
 pipeline {
    environment {
-       registry = "deegbo/jenkins-docker-test"
+       registry = "jenkins-docker-test"
        DOCKER_PWD = credentials('0d96dc76-64cc-45b8-ac1c-7553619c2b86')
    }
    agent {
